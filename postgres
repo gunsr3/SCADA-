@@ -1,0 +1,39 @@
+--
+-- PostgreSQL database cluster dump
+--
+
+-- Started on 2021-12-30 15:40:39
+
+SET default_transaction_read_only = off;
+
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+
+--
+-- Roles
+--
+
+CREATE ROLE "Ignition_DB";
+ALTER ROLE "Ignition_DB" WITH SUPERUSER INHERIT CREATEROLE CREATEDB LOGIN REPLICATION NOBYPASSRLS PASSWORD 'md564393af7747c4422ac0b30356ee33d3c' VALID UNTIL '2023-08-05 07:54:13-04';
+CREATE ROLE "Postgres";
+ALTER ROLE "Postgres" WITH SUPERUSER INHERIT CREATEROLE CREATEDB LOGIN REPLICATION NOBYPASSRLS PASSWORD 'md545b06cbc97ec7b0e5249f44319782a32' VALID UNTIL '2026-01-01 07:36:28-05';
+CREATE ROLE postgres;
+ALTER ROLE postgres WITH SUPERUSER INHERIT CREATEROLE CREATEDB LOGIN REPLICATION BYPASSRLS PASSWORD 'md51f5a0f6232c92e88640c32d564251e32';
+
+
+--
+-- Role memberships
+--
+
+GRANT pg_execute_server_program TO "Ignition_DB" GRANTED BY postgres;
+GRANT pg_execute_server_program TO "Postgres" WITH ADMIN OPTION GRANTED BY postgres;
+
+
+
+
+-- Completed on 2021-12-30 15:40:39
+
+--
+-- PostgreSQL database cluster dump complete
+--
+

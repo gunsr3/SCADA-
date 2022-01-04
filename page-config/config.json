@@ -1,0 +1,30 @@
+{
+  "pages": {
+    "parser": {
+      "viewPath": "L5K/Parser",
+      "title": "",
+      "docks": {
+        "cornerPriority": "left-right",
+        "top": [
+          {
+            "viewPath": "L5K/Parser",
+            "id": "",
+            "viewParams": {},
+            "size": 150,
+            "resizable": false,
+            "iconUrl": "",
+            "modal": false,
+            "show": "visible",
+            "anchor": "fixed",
+            "content": "push",
+            "autoBreakpoint": 480,
+            "handle": "hide"
+          }
+        ]
+      }
+    }
+  },
+  "sharedDocks": {
+    "cornerPriority": "top-bottom"
+  }
+}
